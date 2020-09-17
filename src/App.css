@@ -1,8 +1,19 @@
-.App {
-  text-align: center;
+.app {
+  display: grid;
+  place-items: center;
+  background-color: hsla(269, 100%, 50%, 0.1);
+  height: 100vh;
 }
 
-.App-logo {
+.app__body {
+  display: flex;
+  background-color: hsla(269, 100%, 50%, 0.1);
+  height: 90vh;
+  width: 90vw;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.app-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -13,7 +24,7 @@
   }
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,7 +35,7 @@
   color: white;
 }
 
-.App-link {
+.app-link {
   color: #61dafb;
 }
 
