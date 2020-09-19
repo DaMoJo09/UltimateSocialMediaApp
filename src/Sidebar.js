@@ -12,13 +12,17 @@ function Sidebar() {
   const [rooms, setRooms] = useState([]);
 
   useEffect(() => {
-    db.collection("rooms").onSnapshot((snapshot) => {
+    const unsubscribe = db.collection("rooms").onSnapshot((snapshot) => {
       setRooms(
         snapshot.docs.map((doc) => ({
           id: doc.id,
           data: doc.data(),
         }))
       );
+      // function will always detach realtime listener  when its done using function clean up function ( const unsubscribe = db /return () => { unsubscribe )
+      return () => {
+        unsubscribe();
+      };
     });
   }, []);
 

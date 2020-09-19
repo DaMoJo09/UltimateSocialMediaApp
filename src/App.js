@@ -1,8 +1,8 @@
 import React from "react";
+import "./App.css";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
-import "./App.css";
-import "./Chat.css";
+// import { BrowserRouter as Router, Switch, Route } from "react";
 
 function App() {
   return (
