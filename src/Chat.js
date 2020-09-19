@@ -23,10 +23,6 @@ function Chat() {
     }
   }, [roomId]);
 
-  useEffect(() => {
-    setSeed(Math.floor(Math.random() * 5000));
-  }, []);
-
   const sendMessage = (e) => {
     e.preventDefault();
     console.log("You typed >>> ", input);
@@ -37,7 +33,11 @@ function Chat() {
   return (
     <div className="chat">
       <div className="chat__header">
-        <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
+        <Avatar
+          src={`https://avatars.dicebear.com/api/human/${Math.floor(
+            Math.random() * 5000
+          )}.svg`}
+        />
 
         <div className="chat__headerInfo">
           <h3>{roomName}</h3>
