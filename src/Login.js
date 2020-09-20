@@ -1,7 +1,7 @@
 import React from "react";
+import "./Login.css";
 import { Button } from "@material-ui/core";
 import { auth, provider } from "./firebase";
-import "./Login.css";
 
 function Login() {
   const signIn = () => {
@@ -13,7 +13,7 @@ function Login() {
 
   return (
     <div className="login">
-      <div className="login__conatainer">
+      <div className="login__container">
         <img src="https://i.imgur.com/VxoCi9jm.png" alt="" />
 
         <div className="login__text">
