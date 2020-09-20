@@ -1,16 +1,23 @@
 import React from "react";
 import { Button } from "@material-ui/core";
+import { auth, provider } from "./firebase";
 import "./Login.css";
 
 function Login() {
-  const signIn = () => {};
+  const signIn = () => {
+    auth
+      .signInWithPopup(provider)
+      .then((result) => console.log(result))
+      .catch((error) => alert(error.message));
+  };
 
   return (
     <div className="login">
       <div className="login__conatainer">
-        <img src="https://i.imgur.com/VxoCi9j.png" alt="" />
+        <img src="https://i.imgur.com/VxoCi9jm.png" alt="" />
+
         <div className="login__text">
-          <h1>Sign in to WhatsApp</h1>
+          <h1>Sign in</h1>
         </div>
 
         <Button onClick={signIn}>Sign in with Google</Button>
