@@ -77,7 +77,11 @@ function Chat() {
 
       <div className="chat__body">
         {messages.map((message) => (
-          <p className={`chat__message ${true && "chat__reciever"}`}>
+          <p
+            className={`chat__message ${
+              message.name === user.displayName && "chat__reciever"
+            }`}
+          >
             <span classmate="chat__name">{message.name}</span>
             {message.message}
             <span className="chat__timestamp">
