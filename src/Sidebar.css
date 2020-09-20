@@ -55,3 +55,8 @@
   background-color: hsla(51, 100%, 0%, 0.25);
   overflow: scroll;
 }
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
