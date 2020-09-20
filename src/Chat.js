@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom";
 import "./Chat.css";
 import db from "./firebase";
 import { useStateValue } from "./StateProvider";
+import firebase from "firebase";
 
 function Chat() {
   const [input, setInput] = useState("");
@@ -38,7 +39,11 @@ function Chat() {
     e.preventDefault();
     console.log("You typed >>> ", input);
 
-    db.collection("rooms").doc(roomId).collection("messages").add({});
+    db.collection("rooms").doc(roomId).collection("messages").add({
+      message: input,
+      name: user.displayName,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
 
     setInput("");
   };
