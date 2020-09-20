@@ -51,11 +51,7 @@ function Chat() {
   return (
     <div className="chat">
       <div className="chat__header">
-        <Avatar
-          src={`https://avatars.dicebear.com/api/human/${Math.floor(
-            Math.random() * 5000
-          )}.svg`}
-        />
+        <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
 
         <div className="chat__headerInfo">
           <h3>{roomName}</h3>
@@ -85,7 +81,10 @@ function Chat() {
             <span classmate="chat__name">{message.name}</span>
             {message.message}
             <span className="chat__timestamp">
-              {new Date(message.timestamp?.toDate()).toUTCString()}
+              last seen{""}
+              {new Date(
+                messages[messages.length - 1]?.timestamp?.toDate()
+              ).toUTCString()}
             </span>
           </p>
         ))}
