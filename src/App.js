@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Sidebar from "./Sidebar";
+import Card from "./Card";
 import Chat from "./Chat";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./Login";
