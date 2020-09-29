@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="Card.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+<script>
+
+// (function () {
+//   var slideContainer = $(".slide-container");
+
+//   slideContainer.slick();
+
+//   $("#Post").hide();
+//   $(".slick-active").find("#chat-container").fadeIn(200);
+
+//   // On before slide change
+//   slideContainer.on("beforeChange", function (
+//     event,
+//     slick,
+//     currentSlide,
+//     nextSlide
+//   ) {
+//     $(".slick-active").find("#chat-container").fadeOut(1000);
+//   });
+
+//   // On after slide change
+//   slideContainer.on("afterChange", function (event, slick, currentSlide) {
+//     $(".slick-active").find("#chat-container").fadeIn(200);
+//   });
+// })();
+
+</script>
+
+
+  <body>
+    <!-- <div class="slide-container"> -->
+      <div class="wrapper">
+    <section class="card-list">
+      <article class="card">
+        <header class="card-header">
+          <p>Profile Card</p>
+          <h2>Tagline</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="https://i.imgur.com/GH17juE.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">MoJo</div>
+            Welcome to the MADNESS
+          </div>
+        </div>
+        <div class="tags">
+          <a href="#">Post</a>
+          <a href="#">Share</a>
+          <a href="#">Explore</a>
+          <a href="#" onclick='myFunction()'>Chat</a>
+          <!-- <button onclick='myFunction()'>open</button> -->
+
+          <div id="myDIV">
+            <body>
+              <div class="slide-container">
+                <div class="wrapper">
+              <section class="card-list">
+                <article class="card">
+                  <header class="card-header">
+                    <p>Profile Card</p>
+                    <h2>Tagline</h2>
+                  </header>
+          
+                  <div class="card-author">
+                    <a class="author-avatar" href="#">
+                      <img src="https://i.imgur.com/GH17juE.png" />
+                    </a>
+                    <svg class="half-circle" viewBox="0 0 106 57">
+                      <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                    </svg>
+          
+                    <div class="author-name">
+                      <div class="author-name-prefix">MoJo</div>
+                      Welcome to the MADNESS
+                    </div>
+                  </div>
+                  <div class="tags">
+                    <a href="#">Post</a>
+                    <a href="#">Share</a>
+                    <a href="#">Explore</a>
+                    <a href="#" onclick='myFunction()'>Chat</a>  
+                    <div id="myDIV"></div>
+                    
+                  </div>
+                  </div>
+                  </div>
+               
+                  <!-- <div id="footer-container"></div>
+                  <div class="slide hi-slide">
+                    <div class="hi-prev"></div>
+                    <div class="hi-next"></div>
+                  </div>
+                    <ul>    
+                    </ul>
+                      <li><div class="chat-container">
+                        <div class="profile-card">
+                              <div class="card-header">
+                                <div class="pic">
+                                  <img src="https://i.imgur.com/GH17juE.png" alt="" />
+                                </div>
+                                <div class="name">MoJO</div>
+                                <div class="desc">Crative Mind</div>
+                                <div class="sm">
+                                  <a href="#" class="fab fa-facebook-f"></a>
+                                  <a href="#" class="fab fa-twitter"></a>
+                                  <a href="#" class="fab fa-github"></a>
+                                  <a href="#" class="fab fa-youtube"></a>
+                                </div>
+                                <a href="#" class="contact-btn">Connect</a>
+                        </div>
+                              <div class="card-footer">
+                                <div class="numbers">
+                                  <div class="item">
+                                    <span>109</span>
+                                    Posts
+                                  </div>
+                                  <div class="border"></div>
+                                  <div class="item">
+                                    <span>901k</span>
+                                    Followers
+                                  </div>
+                                  <div class="border"></div>
+                                  <div class="item">
+                                    <span>108</span>
+                                    Following
+                                  </li>
+          
+                                </article>
+                              </div>
+                              </div>
+                            </div>
+          </div>
+          
+        </div>
+     
+        <div id="footer-container"></div>
+        <div class="slide hi-slide">
+          <div class="hi-prev"></div>
+          <div class="hi-next"></div>
+        </div>
+          <ul>    
+          </ul>
+            <li><div class="chat-container">
+              <div class="profile-card">
+                    <div class="card-header">
+                      <div class="pic">
+                        <img src="https://i.imgur.com/GH17juE.png" alt="" />
+                      </div>
+                      <div class="name">MoJO</div>
+                      <div class="desc">Crative Mind</div>
+                      <div class="sm">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-github"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                      </div>
+                      <a href="#" class="contact-btn">Connect</a>
+              </div>
+                    <div class="card-footer">
+                      <div class="numbers">
+                        <div class="item">
+                          <span>109</span>
+                          Posts
+                        </div>
+                        <div class="border"></div>
+                        <div class="item">
+                          <span>901k</span>
+                          Followers
+                        </div>
+                        <div class="border"></div>
+                        <div class="item">
+                          <span>108</span>
+                          Following
+                        </li>
+
+                      </article>
+                    </div>
+                    </div>
+                  </div> -->
+      <!-- <article class="card">
+        <header class="card-header">
+          <p>Chat</p>
+          <h2>Chat</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="https://i.imgur.com/GH17juE.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">New Chat</div>
+            New Room
+          </div>
+
+        </div>
+        <div class="tags">
+          <a href="#">Post</a>
+          <a href="#">Share</a>
+          <a href="#">Explore</a>
+        </div>
+
+        <div class="slide hi-slide">
+          <div class="hi-prev"></div>
+          <div class="hi-next"></div>
+        </div>
+          <ul>    
+          </ul>
+            <li><div class="chat-container">
+              <div class="profile-card">
+                    <div class="card-header">
+                      <div class="pic">
+                        <img src="https://i.imgur.com/93PzNSjt.jpg" alt="" />
+                      </div>
+                      <div class="name">MoJO</div>
+                      <div class="desc">Crative Mind</div>
+                      <div class="sm">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-github"></a>
+                        <a href="#" class="fab fa-youtube"></a>
+                      </div>
+                      <a href="#" class="contact-btn">Connect</a>
+              </div>
+                    <div class="card-footer">
+                      <div class="numbers">
+                        <div class="item">
+                          <span>109</span>
+                          Posts
+                        </div>
+                        <div class="border"></div>
+                        <div class="item">
+                          <span>901k</span>
+                          Followers
+                        </div>
+                        <div class="border"></div>
+                        <div class="item">
+                          <span>108</span>
+                          Following
+                        </li>
+
+        </div>
+      </article>
+      
+      <article class="card">
+        <header class="card-header">
+          <p>Gallery</p>
+          <h2>Take a Look</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="https://i.imgur.com/GH17juE.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Lets Talk</div>
+            see......?
+          </div>
+        </div>
+
+      </div>
+      <div class="tags">
+        <a href="#">Post</a>
+        <a href="#">Share</a>
+        <a href="#">Explore</a>
+      </div>
+
+      <div class="slide hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+      </div>
+        <ul>    
+        </ul>
+          <li><div class="chat-container">
+            <div class="profile-card">
+                  <div class="card-header">
+                    <div class="pic">
+                      <img src="https://i.imgur.com/93PzNSjt.jpg" alt="" />
+                    </div>
+                    <div class="name">MoJO</div>
+                    <div class="desc">Crative Mind</div>
+                    <div class="sm">
+                      <a href="#" class="fab fa-facebook-f"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                    <a href="#" class="contact-btn">Connect</a>
+            </div>
+                  <div class="card-footer">
+                    <div class="numbers">
+                      <div class="item">
+                        <span>109</span>
+                        Posts
+                      </div>
+                      <div class="border"></div>
+                      <div class="item">
+                        <span>901k</span>
+                        Followers
+                      </div>
+                      <div class="border"></div>
+                      <div class="item">
+                        <span>108</span>
+                        Following
+                      </li>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <p>Blog</p>
+          <h2>whats on my Mind</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="https://i.imgur.com/GH17juE.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Let's Talk About..?</div>
+            Today in the life of...?
+          </div>
+        </div>
+
+      </div>
+      <div class="tags">
+        <a href="#">Post</a>
+        <a href="#">Share</a>
+        <a href="#">Explore</a>
+      </div>
+
+      <div class="slide hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+      </div>
+        <ul>    
+        </ul>
+          <li><div class="chat-container">
+            <div class="profile-card">
+                  <div class="card-header">
+                    <div class="pic">
+                      <img src="https://i.imgur.com/93PzNSjt.jpg" alt="" />
+                    </div>
+                    <div class="name">MoJO</div>
+                    <div class="desc">Crative Mind</div>
+                    <div class="sm">
+                      <a href="#" class="fab fa-facebook-f"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                    <a href="#" class="contact-btn">Connect</a>
+            </div>
+                  <div class="card-footer">
+                    <div class="numbers">
+                      <div class="item">
+                        <span>109</span>
+                        Posts
+                      </div>
+                      <div class="border"></div>
+                      <div class="item">
+                        <span>901k</span>
+                        Followers
+                      </div>
+                      <div class="border"></div>
+                      <div class="item">
+                        <span>108</span>
+                        Following
+                      </li>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <p>Action</p>
+          <h2>Show the World How Youre Feeling</h2>
+        </header>
+
+        <div class="card-author">
+          <a class="author-avatar" href="#">
+            <img src="https://i.imgur.com/GH17juE.png" />
+          </a>
+          <svg class="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+
+          <div class="author-name">
+            <div class="author-name-prefix">Action</div>
+            Video Post
+          </div>
+
+      </div>
+      <div class="tags">
+        <a href="#">Post</a>
+        <a href="#">Share</a>
+        <a href="#">Explore</a>
+      </div>
+
+      <div class="slide hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+      </div>
+        <ul>    
+        </ul>
+          <li><div class="chat-container">
+            <div class="profile-card">
+                  <div class="card-header">
+                    <div class="pic">
+                      <img src="https://i.imgur.com/93PzNSjt.jpg" alt="" />
+                    </div>
+                    <div class="name">MoJO</div>
+                    <div class="desc">Crative Mind</div>
+                    <div class="sm">
+                      <a href="#" class="fab fa-facebook-f"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-github"></a>
+                      <a href="#" class="fab fa-youtube"></a>
+                    </div>
+                    <a href="#" class="contact-btn">Connect</a>
+            </div>
+                  <div class="card-footer">
+                    <div class="numbers">
+                      <div class="item">
+                        <span>109</span>
+                        Posts
+                      </div>
+                      <div class="border"></div>
+                      <div class="item">
+                        <span>901k</span>
+                        Followers
+                      </div>
+                      <div class="border"></div>
+                      <div class="item">
+                        <span>108</span>
+                        Following
+                      </li>
+                    </div> -->
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+  </body>
+</html>

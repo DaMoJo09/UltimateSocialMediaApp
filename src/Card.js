@@ -1,11 +1,9 @@
-import React, { Component } from "react";
-import Card from "@material-ui/core";
+import React from "react";
 import "./Card.css";
 
-class App extends Component {
+class Card {
   render() {
     return <div className="Card"></div>;
   }
 }
-
-export default App;
+export default Card;
